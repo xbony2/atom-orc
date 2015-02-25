@@ -1,0 +1,25 @@
+'name': 'Orc'
+'scopeName': 'source.orc'
+'fileTypes': [
+  'orc'
+]
+'patterns': [
+    {
+        'match': '\\b(stop|val|if|then|else|def|lambda|type|import|include|true|false|signal|as)\\b'
+        'name': 'keyword.orc'
+    }
+    {
+        'begin': '{-'
+        'end': '-}'
+        'name': 'comment.orc'
+    }
+    {
+        'begin': '--'
+        'end': '$'
+        'name': 'comment.orc'
+    }
+    {
+        'match': '\\b(\||>>|<<|;)\\b'
+        'name': 'combinator.orc'
+    }
+]
