@@ -1,5 +1,5 @@
 {
-  "name": "atom",
+  "name": "concurrent-orc-language",
   "version": "1.0.0a",
   "description": "Orc syntax highlighting for the Atom text editor",
   "license": "MIT",
