@@ -1,12 +1,11 @@
 {
   "name": "language-orc",
-  "version": "1.0.0a",
+  "version": "0.0.0",
   "description": "Orc syntax highlighting for the Atom text editor",
   "license": "MIT",
   "engines": {
     "atom": "*"
   },
-  "dependencies": {},
   "homepage": "https://github.com/xbony2/atom-orc",
   "repository": {
     "type": "git",
