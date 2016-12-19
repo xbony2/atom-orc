@@ -6,20 +6,37 @@
 'patterns': [
     {
         'match': '\\b(stop|val|if|then|else|def|lambda|type|import|include|true|false|signal|as)\\b'
-        'name': 'keyword.orc'
+        'name': 'keyword.control.orc'
     }
     {
         'begin': '{-'
         'end': '-}'
-        'name': 'comment.orc'
+        'name': 'comment.block.orc'
     }
     {
         'begin': '--'
         'end': '$'
-        'name': 'comment.orc'
+        'name': 'comment.line.orc'
     }
     {
-        'match': '\\b(\||>>|<<|;)\\b'
-        'name': 'combinator.orc'
+        'match': '\\b(\||>>|;|+|-|*|/|**|%|=|<:|:>|>=|<=|/=|&&|\|\||~)\\b'
+        'name': 'keyword.operator.orc'
     }
+	{
+		'begin': '"'
+		'beginCaptures':
+        	'0':
+        		'name': 'punctuation.definition.string.begin.orc'
+		'end': '"'
+		'endCaptures':
+			'0':
+				'name': 'punctuation.definition.string.end.orc'
+		'name': 'string.quoted.double.orc'
+		'patterns': [
+			{
+				'match': '\\b(\\[a-z]|\\\\|\\")\\b'
+				'name': 'constant.character.escape.orc'
+			}
+		]
+	}
 ]

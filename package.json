@@ -4,7 +4,7 @@
   "description": "Orc syntax highlighting for the Atom text editor",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*"
   },
   "dependencies": {},
   "homepage": "https://github.com/xbony2/atom-orc",
