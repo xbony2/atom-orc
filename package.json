@@ -7,10 +7,7 @@
     "atom": "*"
   },
   "homepage": "https://github.com/xbony2/atom-orc",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xbony2/atom-orc.git"
-  },
+  "repository": "https://github.com/xbony2/atom-orc",
   "bugs": {
     "url": "https://github.com/xbony2/atom-orc/issues"
   }
